@@ -257,6 +257,59 @@ get(2):
 
 ```
 
+## Wie vergroessert man den `buffer`
+Mit einer Funktion `private void grow()`. 
+- wir hohlen uns einfach einen neuen buffer mit doppelter `capacity`
+- kopieren alle unsere Elemente in diesen neuen buffer
+- verwenden diesen `newBuffer` ab jetzt als unseren `buffer`
+- updaten unsere `capacity` auf den neuen Wert.
+
+ASCII Art is my passion
+
+```
+Setup:
+    length = 2;
+    capacity = 2;
+
+             +----------+
+    buffer = | 69 | 420 |
+             +----------+
+
+grow():
+-> neuen buffer buffer hohlen mit doppelter capacity
+
+    length = 2;
+    capacity = 2;
+
+                +----------+
+    buffer =    | 69 | 420 |
+                +----------+
+
+                +------------------+
+    newbuffer = |    |     |   |   |
+                +------------------+
+
+-> alten element rueberkopieren 
+
+                +----------+
+    buffer =    | 69 | 420 |
+                +----------+
+                  |    |
+                  V    V
+                +------------------+
+    newbuffer = | 69 | 420 |   |   |
+                +------------------+
+
+-> newBuffer wird zu buffer
+
+             +------------------+
+    buffer = | 69 | 420 |   |   |
+             +------------------+
+
+-> updaten capacity
+    capacity = capacity * 2;
+```
+
 
 > NOTE: die angegebenen Funktionen behandeln keine Fehler (was passiert zum
 > Beispiel wenn man auf einem leeren dynamischen Array `.pop()` called).
