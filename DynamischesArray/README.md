@@ -51,6 +51,8 @@ interface DynamicArray {
 ```
 
 Denken wir uns mal die verschieden Methoden durch:
+## void push(int element)
+
 - `void push(int element)`:
   - zuerst schauen ob genug Platz ist fuer ein weiteres Element
   - wenn nein: mehr Platz machen
@@ -152,11 +154,115 @@ push(13):
 
 ```
 
-
+## `int pop()`
 - `int pop()`
   - letztes element im array finden (wird sich immer bei `buffer[length - 1]` aufhalten)
-  - dieses element entfernen (wird meistens gemacht indem man die )
+  - dieses element entfernen (wird meistens gemacht indem man die `length` einfach dekrementiert also: `length -= 1`)
+  - und das element zurueggeben
 
 Zur Veranschaulichung ein bisschen mehr ASCII Art
 ```
+Setup:
+
+    length = 3
+    capacity = 4
+
+             +-------------------+
+    buffer = | 69 | 420 | 13 |   |
+             +-------------------+
+
+             |-length--------|
+
+             |---capacity--------|
+
+
+    -> letztes element finden (buffer[length - 1])
+
+                   buffer[length - 1]
+                          |
+                          V
+             +-------------------+
+    buffer = | 69 | 420 | 13 |   |
+             +-------------------+
+
+             |-length--------|
+
+             |---capacity--------|
+
+
+    int element = 13;
+
+    -> element "entfernen" also length - 1
+
+             +-------------------+
+    buffer = | 69 | 420 | 13 |   |
+             +-------------------+
+
+             |-length---|
+
+             |---capacity--------|
+
+    -> element zurueggeben
+
+    return element
 ```
+
+> NOTE: wir entfernene nicht wirklich das Element aus unserem `buffer` sondern
+> rechnen einfach die `length` - 1 damit sagen wir unserer `push` Funktion: 
+> > "Jo dieser Platz ist frei du kannst hier neue Daten reinschreiben"
+
+
+## `get(int index)`
+- `get(index)`
+- Finde das element am gegebenen index
+- returne das element
+
+MEHR ASCII ART:
+
+```
+Setup:
+    length = 3;
+    capacity = 4;
+
+             +-----------------+
+    buffer = | 30 | 30 | 9 |   |
+             +-----------------+
+
+             |--length-----|
+
+             |--capacity-------|
+
+
+get(2):
+    -> element an index: 2 finden
+
+                       buffer[2]
+                         |
+                         V
+             +-----------------+
+    buffer = | 30 | 30 | 9 |   |
+             +-----------------+
+
+             |--length-----|
+
+             |--capacity-------|
+
+
+    int element = buffer[2];
+    element = 9
+
+    -> element returnen
+
+    return element
+
+```
+
+
+> NOTE: die angegebenen Funktionen behandeln keine Fehler (was passiert zum
+> Beispiel wenn man auf einem leeren dynamischen Array `.pop()` called).
+> Allerdings sollte man zuerst lernen wie Sachen funktionieren sollten wenn
+> alle Umstaende gut sind und sich dann erst anschauen was passiert wenn
+> Bullshit passiert IMHO
+
+> NOTE: die restlichen Funktionen sind noch nicht beschrieben da dies ein WIP
+> ist und ich erstmal schauen moechte ob ueberhaupt interesse bestehen wuerde.
