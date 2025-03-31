@@ -29,7 +29,7 @@ Zudem Folgen Implementierungen zumeist dem folgenden Interface.
 >
 > Zum Beispiel: Alle Autos haben das Interface eines Lenkrads und eines
 > Gaspedals. Wenn man also unterschiedlich Autos faehrt reicht ein
-> Fuehrerschein. Man was wie man ein Auto faehrt -> man kann alle Autos fahren.
+> Fuehrerschein. Man weis wie man ein Auto faehrt -> man kann alle Autos fahren.
 
 ```java
 interface DynamicArray {
