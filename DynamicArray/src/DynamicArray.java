@@ -1,4 +1,6 @@
-public class DynamicArray {
+import interfaces.IDynamicArray;
+
+public class DynamicArray implements IDynamicArray {
     private int length;
     private int capacity;
     private int[] buffer;
