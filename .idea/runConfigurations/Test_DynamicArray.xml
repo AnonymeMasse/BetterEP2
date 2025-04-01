@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Test DynamicArray" type="JUnit" factoryName="JUnit" folderName="DynamicArray">
+    <module name="DynamicArray" />
+    <option name="PACKAGE_NAME" value="" />
+    <option name="MAIN_CLASS_NAME" value="" />
+    <option name="METHOD_NAME" value="" />
+    <option name="TEST_OBJECT" value="package" />
+    <patterns>
+      <pattern testClass="DynamicArrayTest" />
+      <pattern testClass="MusterloesungTest" />
+    </patterns>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
