@@ -1,11 +1,11 @@
 import interfaces.IDynamicArray;
 
-public class Musterloesung implements IDynamicArray {
+public class ExampleSolution implements IDynamicArray {
     private int length;
     private int capacity;
     private int[] buffer;
 
-    public Musterloesung() {
+    public ExampleSolution() {
         this.length = 0;                                // initial sind keine Elemente im Array also ist unsere Liste lehr
         this.capacity = 1;                              // eine initiale Groesse unseres buffers
         this.buffer = new int[this.capacity];           // buffer mit capacity initilisieren
