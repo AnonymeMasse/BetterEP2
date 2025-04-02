@@ -25,4 +25,16 @@ public class DynamicArray implements IDynamicArray {
         // TODO: implement  get method
         return -1;
     }
+
+    public int length() {
+        return 0;
+    }
+
+    public void insert(int element, int index) {
+
+    }
+
+    public int remove(int index) {
+        return 0;
+    }
 }

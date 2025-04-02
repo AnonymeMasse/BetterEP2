@@ -20,7 +20,6 @@ public class ExampleSolution implements IDynamicArray {
         for (int i = 0; i < this.length; i += 1) {
             newBuffer[i] = this.buffer[i];
         }
-
         // diese Copy function koennte auch so aussehen:
         // System.arraycopy(this.buffer, 0, newBuffer, 0, this.length);
 
@@ -57,5 +56,40 @@ public class ExampleSolution implements IDynamicArray {
 
         int element = this.buffer[index];       // element im buffer finden
         return element;                         // element zurueckgeben
+    }
+
+    // returns the number of elements stored
+    public int length() {
+        // the number of elements is stored in the object variable `this.length`
+        return this.length;
+    }
+
+    public void insert(int element, int index) {
+        boolean has_enough_space = this.length < this.capacity;
+        if (!has_enough_space) {
+            grow();
+        }
+
+        // fuer element Platz machen im Buffer indem man jedes element ab `index` auf eine Stelle weiter rechts kopiert
+        for (int i = this.length - 1; i >= index; i -= 1) {
+            this.buffer[i + 1] = this.buffer[i];
+        }
+
+        // dieser Copy Loop koennte auch durch diesen Call ersetzt werden
+        // System.arraycopy(this.buffer, index, this.buffer, index + 1, this.length - index);
+        this.buffer[index] = element;
+        this.length += 1;
+    }
+
+    public int remove(int index) {
+        int element = this.buffer[index];
+
+        for (int i = index; i < this.length - 1; i += 1) {
+            this.buffer[i] = this.buffer[i + 1];
+        }
+
+        this.length -= 1;
+
+        return element;
     }
 }
