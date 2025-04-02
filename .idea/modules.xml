@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../BinarySearchTree/BinarySearchTree.iml" filepath="$PROJECT_DIR$/../BinarySearchTree/BinarySearchTree.iml" />
       <module fileurl="file://$PROJECT_DIR$/DynamicArray/DynamicArray.iml" filepath="$PROJECT_DIR$/DynamicArray/DynamicArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../LinkedList/LinkedList.iml" filepath="$PROJECT_DIR$/../LinkedList/LinkedList.iml" />
     </modules>
   </component>
 </project>
