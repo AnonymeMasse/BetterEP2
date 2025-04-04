@@ -1,3 +1,5 @@
+package examples;
+
 import interfaces.IDynamicArray;
 
 public class ExampleDynamicArray implements IDynamicArray {

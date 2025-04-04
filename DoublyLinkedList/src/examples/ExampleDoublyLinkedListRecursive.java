@@ -1,3 +1,5 @@
+package examples;
+
 import interfaces.IDoublyLinkedList;
 
 public class ExampleDoublyLinkedListRecursive implements IDoublyLinkedList {
