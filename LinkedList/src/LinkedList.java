@@ -1,37 +1,43 @@
 import interfaces.ILinkedList;
 
 public class LinkedList implements ILinkedList {
-    private class Node {
-        int element;
-        Node next;
-
-        Node(int element) {
-            this.element = element;
-            this.next = null;
-        }
-    }
-
-    public void push(int element) {
+    @Override
+    public void addLast(int element) {
 
     }
 
-    public int pop() {
-        return 0;
+    @Override
+    public void addFirst(int element) {
+
     }
 
-    public int get(int index) {
-        return 0;
-    }
-
-    public int length() {
-        return 0;
-    }
-
+    @Override
     public void insert(int element, int index) {
 
     }
 
-    public int remove(int index) {
+    @Override
+    public Integer get(int index) {
+        return 0;
+    }
+
+    @Override
+    public Integer removeLast() {
+        return 0;
+    }
+
+    @Override
+    public Integer removeFirst() {
+        return 0;
+    }
+
+    @Override
+    public Integer remove(int index) {
+        return 0;
+    }
+
+    @Override
+    public int length() {
         return 0;
     }
 }

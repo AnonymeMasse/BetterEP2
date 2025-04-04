@@ -1,6 +1,6 @@
 package interfaces;
 
-public interface ILinkedList {
+public interface IDoublyLinkedList {
     void addLast(int value);
     void addFirst(int value);
     void insert(int value, int index);
