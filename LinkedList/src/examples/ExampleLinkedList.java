@@ -1,3 +1,5 @@
+package examples;
+
 import interfaces.ILinkedList;
 
 public class ExampleLinkedList implements ILinkedList {

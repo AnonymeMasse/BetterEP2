@@ -1,4 +1,5 @@
-import interfaces.ILinkedList;
+package interfaces;
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

@@ -1,3 +1,5 @@
+package examples;
+
 import interfaces.ILinkedList;
 
 public class ExampleLinkedListRecursive implements ILinkedList {

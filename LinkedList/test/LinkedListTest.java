@@ -1,4 +1,4 @@
-import org.junit.jupiter.api.condition.DisabledIfSystemProperty;
+import interfaces.ILinkedListTest;
 
 public class LinkedListTest implements ILinkedListTest<LinkedList> {
     @Override
