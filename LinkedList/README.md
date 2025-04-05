@@ -73,7 +73,7 @@ Im Wesentlichen betrachten wir zwei Fälle:
 
 - Fall 2: Es befinden sich bereits Nodes in der List:
     1. Wir traversieren die Liste bis wir das letzte Node gefunden haben, also
-       bis `current.getNext()` uns `null` zurückliefert:
+       bis `current.next` uns `null` zurückliefert:
 
        ![](images/addLast_traverse.svg)
 
