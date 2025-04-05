@@ -1,8 +1,11 @@
 package interfaces;
 
 import org.junit.jupiter.api.DisplayName;
+
 import static org.junit.jupiter.api.Assertions.*;
+
 import org.junit.jupiter.api.Test;
+
 
 public interface IDynamicArrayTest<T extends IDynamicArray> {
     T createDynamicArray();
