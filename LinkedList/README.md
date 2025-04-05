@@ -4,9 +4,10 @@ Eine Linked List ist eine Datenstruktur, die – wie auch ein dynamisches Array 
 zur Laufzeit wachsen und schrumpfen kann.
 
 Im Gegensatz zu einem dynamischen Array bietet die Linked List allerdings den
-Vorteil, dass das Einfügen an einer Stelle `x` einen Konstanten Zeitaufwand
-`O(1)` hat. Im Array hingegen, wäre dieser linear `O(n)`, da alle Elemente nach
-`x` verschoben werden müssten.
+Vorteil, dass das Einfügen - unter der Voraussetzung, dass wir unser Ziel-Node
+bereits haben - einen Konstanten Zeitaufwand `O(1)` hat. Im Array hingegen, wäre
+dieser linear `O(n)`, da alle Elemente um 'x' nach rechts verschoben werden
+müssten.
 
 Ein Nachteil der Linked List ist, dass der Zugriff auf ein Element immer mit dem
 Traversieren der Liste verbunden ist, was nur in `O(n)` möglich ist. Demnach
@@ -27,7 +28,7 @@ Im Prinzip benötigt die primitivste Form einer Linked List lediglich:
 Eine sehr einfache Optimierung für eine `length()` Funktion ist allerdings das
 Hinzufügen von:
 
-- `private int count` ... eine `int` variable,
+- `private int length` ... eine `int` variable,
   mit welcher die Elemente in der Liste gezählt werden
 
 Zu zweiteren jedoch später mehr.
@@ -80,14 +81,13 @@ Im Wesentlichen betrachten wir zwei Fälle:
 
        ![](images/addLast_insert.svg)
 
-Wir setzten den Nachfolger des neuen Elements auf den aktuellen head und den
-head auf das neue Element.
-
 ### `void addFirst(int value)`
 
 `addFirst` ist eine der einfacheren Methoden. Sie setzt lediglich den Nachfolger
 des neuen nodes auf den aktuellen `head` und setzt schließlich den `head` auf
 das neue Node.
+
+![](images/addFirst.svg)
 
 ### `void insert(int value, int index)`
 
@@ -98,6 +98,8 @@ Dann wird die LinkedList solange traversiert bis wir bei `index` ankommen.
 Also setzen wir in jeder Iteration zuerst `parent` auf `current` und `current`
 solange auf `current.getNext()` bis `current` auf `index` zeigt.
 
+![](images/insert_traverse.svg)
+
 Dann sind zwei Fälle zu unterscheiden:
 
 - Fall 1: Die LinkedList ist leer `parent == null`:
@@ -107,6 +109,8 @@ Dann sind zwei Fälle zu unterscheiden:
 - Fall 2: Es befinden sich bereits Nodes in der List:
     - Der Nachfolger der `newNode` wird auf `current` gesetzt und der Nachfolger
       von `parent` auf `newNode`
+
+![](images/insert_insert.svg)
 
 ### `Integer get(int index)`
 
@@ -180,3 +184,8 @@ Abschließend noch die `length()` Funktion. Sie ist im Prinzip nichts anderes al
 ein Traverse, mit einer Laufvariable `length`.
 
 ![](images/length_traverse.svg)
+
+> Note: Wie oben erwähnt, könnte man diesen Traverse durch eine `length`
+> Variable ersetzen, und diese immer bei insert/remove operationen entsprechend
+> Inkrementieren bzw. Dekrementieren. So würde der Aufwand von `length()` nicht
+> `O(n)` betragen, sondern `O(1)`
