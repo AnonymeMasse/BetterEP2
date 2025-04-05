@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="874.72174"
+   height="335.37485"
+   viewBox="-0.5 -0.5 874.72174 335.37485"
+   id="svg668"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <defs
+     id="defs1" />
+  <g
+     id="layer11"
+     transform="translate(-1227.9503,-2870.99)">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.89512;stroke-opacity:1"
+       id="rect695"
+       width="874.72174"
+       height="335.37485"
+       x="1227.4503"
+       y="2870.49"
+       rx="0"
+       ry="0" />
+    <g
+       id="g679"
+       transform="translate(-672.68881,-1961.8226)">
+      <path
+         d="m 2058,5025 h 69.76"
+         fill="none"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path543" />
+      <path
+         d="m 2135.76,5025 -8,4 v -8 z"
+         fill="#000000"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path544" />
+      <rect
+         x="1978"
+         y="4985"
+         width="80"
+         height="80"
+         rx="12"
+         ry="12"
+         fill="#ffffff"
+         stroke="#000000"
+         stroke-width="2"
+         pointer-events="all"
+         id="rect545" />
+      <g
+         transform="translate(-0.5,-0.5)"
+         id="g547">
+        <switch
+           id="switch546">
+          <foreignObject
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 5025px; margin-left: 1979px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 24px; font-family: &quot;Courier New&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">A</xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <text
+             x="2018"
+             y="5032"
+             fill="light-dark(#000000, #ffffff)"
+             font-family="'Courier New'"
+             font-size="24px"
+             text-anchor="middle"
+             id="text546">A</text>
+        </switch>
+      </g>
+      <path
+         d="m 2018,5105 v -30 0.24"
+         fill="none"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path549" />
+      <path
+         d="m 2018,5067.24 4,8 h -8 z"
+         fill="#000000"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path550" />
+      <rect
+         x="1988"
+         y="5105"
+         width="60"
+         height="20"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect551" />
+      <g
+         transform="translate(-0.5,-0.5)"
+         id="g553">
+        <switch
+           id="switch552">
+          <foreignObject
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 5115px; margin-left: 1989px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 16px; font-family: &quot;Courier New&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">head</xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <text
+             x="2018"
+             y="5120"
+             fill="light-dark(#000000, #ffffff)"
+             font-family="'Courier New'"
+             font-size="16px"
+             text-anchor="middle"
+             id="text552">head</text>
+        </switch>
+      </g>
+      <path
+         d="m 2178,5065 v 40 h 320 v -29.76"
+         fill="none"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path555" />
+      <path
+         d="m 2498,5067.24 4,8 h -8 z"
+         fill="#000000"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path556" />
+      <rect
+         x="2138"
+         y="4985"
+         width="80"
+         height="80"
+         rx="12"
+         ry="12"
+         fill="#ffffff"
+         stroke="#000000"
+         stroke-width="2"
+         pointer-events="all"
+         id="rect557" />
+      <g
+         transform="translate(-0.5,-0.5)"
+         id="g559">
+        <switch
+           id="switch558">
+          <foreignObject
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 5025px; margin-left: 2139px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 24px; font-family: &quot;Courier New&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">B</xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <text
+             x="2178"
+             y="5032"
+             fill="light-dark(#000000, #ffffff)"
+             font-family="'Courier New'"
+             font-size="24px"
+             text-anchor="middle"
+             id="text558">B</text>
+        </switch>
+      </g>
+      <path
+         d="m 2378,5025 h 69.76"
+         fill="none"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path561" />
+      <path
+         d="m 2455.76,5025 -8,4 v -8 z"
+         fill="#000000"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path562" />
+      <rect
+         x="2298"
+         y="4985"
+         width="80"
+         height="80"
+         rx="12"
+         ry="12"
+         fill="#ffffff"
+         stroke="#000000"
+         stroke-width="2"
+         pointer-events="all"
+         id="rect563" />
+      <g
+         transform="translate(-0.5,-0.5)"
+         id="g565">
+        <switch
+           id="switch564">
+          <foreignObject
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 5025px; margin-left: 2299px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 24px; font-family: &quot;Courier New&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">C</xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <text
+             x="2338"
+             y="5032"
+             fill="light-dark(#000000, #ffffff)"
+             font-family="'Courier New'"
+             font-size="24px"
+             text-anchor="middle"
+             id="text564">C</text>
+        </switch>
+      </g>
+      <path
+         d="m 2538,5025 h 69.76"
+         fill="none"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path567" />
+      <path
+         d="m 2615.76,5025 -8,4 v -8 z"
+         fill="#000000"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path568" />
+      <rect
+         x="2458"
+         y="4985"
+         width="80"
+         height="80"
+         rx="12"
+         ry="12"
+         fill="#ffffff"
+         stroke="#000000"
+         stroke-width="2"
+         pointer-events="all"
+         id="rect569" />
+      <g
+         transform="translate(-0.5,-0.5)"
+         id="g571">
+        <switch
+           id="switch570">
+          <foreignObject
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 5025px; margin-left: 2459px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 24px; font-family: &quot;Courier New&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">D</xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <text
+             x="2498"
+             y="5032"
+             fill="light-dark(#000000, #ffffff)"
+             font-family="'Courier New'"
+             font-size="24px"
+             text-anchor="middle"
+             id="text570">D</text>
+        </switch>
+      </g>
+      <path
+         d="m 2338,4895 v 45 l 0.18,34.76"
+         fill="none"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path573" />
+      <path
+         d="m 2338.23,4982.76 -4.05,-7.97 8,-0.05 z"
+         fill="#000000"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path574" />
+      <rect
+         x="2308"
+         y="4875"
+         width="60"
+         height="20"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect575" />
+      <g
+         transform="translate(-0.5,-0.5)"
+         id="g577">
+        <switch
+           id="switch576">
+          <foreignObject
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 4885px; margin-left: 2309px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 16px; font-family: &quot;Courier New&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">current</xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <text
+             x="2338"
+             y="4890"
+             fill="light-dark(#000000, #ffffff)"
+             font-family="'Courier New'"
+             font-size="16px"
+             text-anchor="middle"
+             id="text576">current</text>
+        </switch>
+      </g>
+      <rect
+         x="2618"
+         y="4985"
+         width="80"
+         height="80"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect579" />
+      <g
+         transform="translate(-0.5,-0.5)"
+         id="g581">
+        <switch
+           id="switch580">
+          <foreignObject
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 5025px; margin-left: 2619px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 24px; font-family: &quot;Courier New&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">null</xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <text
+             x="2658"
+             y="5032"
+             fill="light-dark(#000000, #ffffff)"
+             font-family="'Courier New'"
+             font-size="24px"
+             text-anchor="middle"
+             id="text580">null</text>
+        </switch>
+      </g>
+      <path
+         d="m 2178,4895 v 45 l 0.18,34.76"
+         fill="none"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path583" />
+      <path
+         d="m 2178.23,4982.76 -4.05,-7.97 8,-0.05 z"
+         fill="#000000"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path584" />
+      <rect
+         x="2148"
+         y="4875"
+         width="60"
+         height="20"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect585" />
+      <g
+         transform="translate(-0.5,-0.5)"
+         id="g587">
+        <switch
+           id="switch586">
+          <foreignObject
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 4885px; margin-left: 2149px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 16px; font-family: &quot;Courier New&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">parent</xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <text
+             x="2178"
+             y="4890"
+             fill="light-dark(#000000, #ffffff)"
+             font-family="'Courier New'"
+             font-size="16px"
+             text-anchor="middle"
+             id="text586">parent</text>
+        </switch>
+      </g>
+      <path
+         d="m 2218,5024.57 h 69.76"
+         fill="none"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-miterlimit="10"
+         stroke-dasharray="6, 6"
+         pointer-events="stroke"
+         id="path589" />
+      <path
+         d="m 2295.76,5024.57 -8,4 v -8 z"
+         fill="#000000"
+         stroke="#000000"
+         stroke-width="2"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path590" />
+    </g>
+  </g>
+</svg>
