@@ -17,7 +17,7 @@ public class ExercisesLinkedList implements IExcercisesLinkedList<LinkedList> {
      */
     @Override
     public LinkedList linkedListFromArray(int[] array) {
-        // TODO: implement methods
+        // TODO: implement method
         return null;
     }
 
@@ -30,7 +30,7 @@ public class ExercisesLinkedList implements IExcercisesLinkedList<LinkedList> {
      */
     @Override
     public LinkedList copyLinkedList(LinkedList input) {
-        // TODO: implement methods
+        // TODO: implement method
         return null;
     }
 
@@ -49,7 +49,7 @@ public class ExercisesLinkedList implements IExcercisesLinkedList<LinkedList> {
      */
     @Override
     public LinkedList mergeTwoSortedLinkedLists(LinkedList a, LinkedList b) {
-        // TODO: implement methods
+        // TODO: implement method
         return null;
     }
 
@@ -64,7 +64,7 @@ public class ExercisesLinkedList implements IExcercisesLinkedList<LinkedList> {
      */
     @Override
     public LinkedList getLowerHalfOfLinkedList(LinkedList input) {
-        // TODO: implement methods
+        // TODO: implement method
         return null;
     }
 
@@ -79,7 +79,7 @@ public class ExercisesLinkedList implements IExcercisesLinkedList<LinkedList> {
      */
     @Override
     public LinkedList getUpperHalfOfLinkedList(LinkedList input) {
-        // TODO: implement methods
+        // TODO: implement method
         return null;
     }
 
@@ -99,7 +99,7 @@ public class ExercisesLinkedList implements IExcercisesLinkedList<LinkedList> {
      */
     @Override
     public LinkedList mergeSortLinkedList(LinkedList input) {
-        // TODO: implement methods
+        // TODO: implement method
         return null;
     }
 }
