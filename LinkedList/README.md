@@ -96,7 +96,7 @@ Intervall `[0, length())` befindet.
 
 Dann wird die LinkedList solange traversiert bis wir bei `index` ankommen.
 Also setzen wir in jeder Iteration zuerst `parent` auf `current` und `current`
-solange auf `current.getNext()` bis `current` auf `index` zeigt.
+solange auf `current.next` bis `current` auf `index` zeigt.
 
 ![](images/insert_traverse.svg)
 
