@@ -1,0 +1,28 @@
+name: junit-tests.yml
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+env:
+  JDK_NAME: temurin-21-jdk-amd64
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set java version to 21
+        run: sudo update-java-alternatives --set $JDK_NAME
+
+      - name: Create output directory
+        run: mkdir out
+
+      - name: Compile Java classes
+        run: javac -d out -cp lib/junit-platform-console-standalone-1.8.1.jar **/{test,src}/{**/,}*.java
+
+      - name: Execute JUnit tests
+        run: java -jar lib/junit-platform-console-standalone-1.8.1.jar --class-path out --select-package "examples"
