@@ -2,7 +2,7 @@
 
 [![junit-tests.yml](https://github.com/AnonymeMasse/BetterEP2/actions/workflows/junit-tests.yml/badge.svg)](https://github.com/AnonymeMasse/BetterEP2/actions/workflows/junit-tests.yml)
 
-## Für wen ist Dieses Repo
+## Für wen ist dieses Repo
 Dieses Repo ist gedacht, um den Step-Up zwischen den Vorlesungen EP1 und EP2
 (an der TU-Wien) zu vereinfachen, indem es einem erlaubt, die einzelnen
 Datenstrukturen, die in EP2 vorgestellt werden, als Standalones zu
