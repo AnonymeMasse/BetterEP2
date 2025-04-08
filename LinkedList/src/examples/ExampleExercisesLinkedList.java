@@ -1,8 +1,9 @@
 package examples;
 
-import interfaces.IExcercisesLinkedList;
+import interfaces.IExercisesLinkedList;
+import interfaces.ILinkedList;
 
-public class ExampleExercisesLinkedList implements IExcercisesLinkedList<ExampleLinkedList> {
+public class ExampleExercisesLinkedList implements IExercisesLinkedList {
     /**
      * add every single value into a linked list and return it the original order of the values should be preserved
      *
@@ -12,7 +13,7 @@ public class ExampleExercisesLinkedList implements IExcercisesLinkedList<Example
      * @return a list with all values from array in the same order as in array
      */
     @Override
-    public ExampleLinkedList linkedListFromArray(int[] array) {
+    public ILinkedList linkedListFromArray(int[] array) {
         ExampleLinkedList list = new ExampleLinkedList();
 
         // loop over array and add every value to list
@@ -31,7 +32,7 @@ public class ExampleExercisesLinkedList implements IExcercisesLinkedList<Example
      * @return a copy of input
      */
     @Override
-    public ExampleLinkedList copyLinkedList(ExampleLinkedList input) {
+    public ILinkedList copyLinkedList(ILinkedList input) {
         ExampleLinkedList list = new ExampleLinkedList();
 
         // loop over input and add every value to list
@@ -56,7 +57,7 @@ public class ExampleExercisesLinkedList implements IExcercisesLinkedList<Example
      * @return a sorted linked list (ascending order) with every value from a and b
      */
     @Override
-    public ExampleLinkedList mergeTwoSortedLinkedLists(ExampleLinkedList a, ExampleLinkedList b) {
+    public ILinkedList mergeTwoSortedLinkedLists(ILinkedList a, ILinkedList b) {
         Integer valueA = a.removeFirst();
         Integer valueB = b.removeFirst();
 
@@ -108,7 +109,7 @@ public class ExampleExercisesLinkedList implements IExcercisesLinkedList<Example
      * @return a new linked list containing the lower half (in the same order) of input
      */
     @Override
-    public ExampleLinkedList getLowerHalfOfLinkedList(ExampleLinkedList input) {
+    public ILinkedList getLowerHalfOfLinkedList(ILinkedList input) {
         ExampleLinkedList list = new ExampleLinkedList();
 
         // iterate over lower half of input and add it to list
@@ -129,7 +130,7 @@ public class ExampleExercisesLinkedList implements IExcercisesLinkedList<Example
      * @return a new linked list containing the lower half (in the same order) of input
      */
     @Override
-    public ExampleLinkedList getUpperHalfOfLinkedList(ExampleLinkedList input) {
+    public ILinkedList getUpperHalfOfLinkedList(ILinkedList input) {
 
         ExampleLinkedList list = new ExampleLinkedList();
 
@@ -157,7 +158,7 @@ public class ExampleExercisesLinkedList implements IExcercisesLinkedList<Example
      * @return a new sorted linked list
      */
     @Override
-    public ExampleLinkedList mergeSortLinkedList(ExampleLinkedList input) {
+    public ILinkedList mergeSortLinkedList(ILinkedList input) {
         // check if lists are two small to be split again
         // if so the lists are sorted therefore they can be returned as sorted
         // copy here because we should return a 'new' linked list
@@ -170,8 +171,8 @@ public class ExampleExercisesLinkedList implements IExcercisesLinkedList<Example
 
         // split list into lower and upper
         // we need the copy again because getLowerHalfOfLinkedList / getUpperHalfOfLinkedList may alter the input
-        ExampleLinkedList lower = getLowerHalfOfLinkedList(copyLinkedList(input));
-        ExampleLinkedList upper = getUpperHalfOfLinkedList(copyLinkedList(input));
+        ILinkedList lower = getLowerHalfOfLinkedList(copyLinkedList(input));
+        ILinkedList upper = getUpperHalfOfLinkedList(copyLinkedList(input));
 
         // sort the two half's
         lower = mergeSortLinkedList(lower);

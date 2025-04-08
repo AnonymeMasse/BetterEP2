@@ -1,6 +1,7 @@
-import interfaces.IExcercisesLinkedList;
+import interfaces.IExercisesLinkedList;
+import interfaces.ILinkedList;
 
-public class ExercisesLinkedList implements IExcercisesLinkedList<LinkedList> {
+public class ExercisesLinkedList implements IExercisesLinkedList {
 
     // ---------------------------------------------------------------------------------------------------------------//
     // GENERAL NOTE:    these exercises are meant to be solved top too bottom and are building on one another         //
@@ -16,7 +17,7 @@ public class ExercisesLinkedList implements IExcercisesLinkedList<LinkedList> {
      * @return a list with all values from array in the same order as in array
      */
     @Override
-    public LinkedList linkedListFromArray(int[] array) {
+    public ILinkedList linkedListFromArray(int[] array) {
         // TODO: implement method
         return null;
     }
@@ -29,7 +30,7 @@ public class ExercisesLinkedList implements IExcercisesLinkedList<LinkedList> {
      * @return a copy of input
      */
     @Override
-    public LinkedList copyLinkedList(LinkedList input) {
+    public ILinkedList copyLinkedList(ILinkedList input) {
         // TODO: implement method
         return null;
     }
@@ -48,7 +49,7 @@ public class ExercisesLinkedList implements IExcercisesLinkedList<LinkedList> {
      * @return a sorted linked list (ascending order) with every value from a and b
      */
     @Override
-    public LinkedList mergeTwoSortedLinkedLists(LinkedList a, LinkedList b) {
+    public ILinkedList mergeTwoSortedLinkedLists(ILinkedList a, ILinkedList b) {
         // TODO: implement method
         return null;
     }
@@ -63,7 +64,7 @@ public class ExercisesLinkedList implements IExcercisesLinkedList<LinkedList> {
      * @return a new linked list containing the lower half (in the same order) of input
      */
     @Override
-    public LinkedList getLowerHalfOfLinkedList(LinkedList input) {
+    public ILinkedList getLowerHalfOfLinkedList(ILinkedList input) {
         // TODO: implement method
         return null;
     }
@@ -78,13 +79,13 @@ public class ExercisesLinkedList implements IExcercisesLinkedList<LinkedList> {
      * @return a new linked list containing the lower half (in the same order) of input
      */
     @Override
-    public LinkedList getUpperHalfOfLinkedList(LinkedList input) {
+    public ILinkedList getUpperHalfOfLinkedList(ILinkedList input) {
         // TODO: implement method
         return null;
     }
 
     /**
-     * sort input with merge sort using the earlier methods: getLowerHalfOfLinkedList, getUpperHalfOfLinkedList, and mergeTwoSortedLinkedLists
+     * sort input with merge sort using the earlier methods: getLowerHalfOfILinkedList, getUpperHalfOfILinkedList, and mergeTwoSortedILinkedLists
      * <p>
      * merge sort splits the given input recursively into a lower and an upper half
      * until each half is either empty or holds exactly on value then each have is merged again
@@ -98,7 +99,7 @@ public class ExercisesLinkedList implements IExcercisesLinkedList<LinkedList> {
      * @return a new sorted linked list
      */
     @Override
-    public LinkedList mergeSortLinkedList(LinkedList input) {
+    public ILinkedList mergeSortLinkedList(ILinkedList input) {
         // TODO: implement method
         return null;
     }

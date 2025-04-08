@@ -1,6 +1,6 @@
 import interfaces.IExercisesDoublyLinkedListTest;
 
-public class ExercisesDoublyLinkedListTest implements IExercisesDoublyLinkedListTest<DoublyLinkedList, ExercisesDoublyLinkedList> {
+public class ExercisesDoublyLinkedListTest implements IExercisesDoublyLinkedListTest {
     @Override
     public ExercisesDoublyLinkedList createExercisesDoublyLinkedList() {
         return new ExercisesDoublyLinkedList();

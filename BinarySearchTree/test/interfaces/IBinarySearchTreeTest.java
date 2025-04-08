@@ -5,62 +5,62 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public interface IBinarySearchTreeTest<T extends IBinarySearchTree> {
-    T createBinarySearchTree();
+public interface IBinarySearchTreeTest {
+    IBinarySearchTree createBinarySearchTree();
 
     @Test
     @DisplayName("Check contains on empty Tree")
     default void checkContainsOnEmptyTree() {
-        T tree = this.createBinarySearchTree();
+        IBinarySearchTree tree = this.createBinarySearchTree();
         assertEquals(false, tree.contains(69));
     }
 
     @Test
     @DisplayName("Check remove on empty Tree")
     default void checkRemoveOnEmptyTree() {
-        T tree = this.createBinarySearchTree();
+        IBinarySearchTree tree = this.createBinarySearchTree();
         assertEquals(null, tree.remove(69));
     }
 
     @Test
     @DisplayName("Check findMin on empty Tree")
     default void checkFindMinOnEmptyTree() {
-        T tree = this.createBinarySearchTree();
+        IBinarySearchTree tree = this.createBinarySearchTree();
         assertEquals(null, tree.findMin());
     }
 
     @Test
     @DisplayName("Check findMax on empty Tree")
     default void checkFindMaxOnEmptyTree() {
-        T tree = this.createBinarySearchTree();
+        IBinarySearchTree tree = this.createBinarySearchTree();
         assertEquals(null, tree.findMax());
     }
 
     @Test
     @DisplayName("Check popMin on empty Tree")
     default void checkPopMinOnEmptyTree() {
-        T tree = this.createBinarySearchTree();
+        IBinarySearchTree tree = this.createBinarySearchTree();
         assertEquals(null, tree.popMin());
     }
 
     @Test
     @DisplayName("Check popMax on empty Tree")
     default void checkPopMaxOnEmptyTree() {
-        T tree = this.createBinarySearchTree();
+        IBinarySearchTree tree = this.createBinarySearchTree();
         assertEquals(null, tree.popMax());
     }
 
     @Test
     @DisplayName("Check length on empty Tree")
     default void checkLengthOnEmptyTree() {
-        T tree = this.createBinarySearchTree();
+        IBinarySearchTree tree = this.createBinarySearchTree();
         assertEquals(0, tree.length());
     }
 
     @Test
     @DisplayName("Check Put and Contains")
     default void checkPutAndContains() {
-        T tree = this.createBinarySearchTree();
+        IBinarySearchTree tree = this.createBinarySearchTree();
 
         assertEquals(false, tree.contains(0));
         tree.put(0);
@@ -90,7 +90,7 @@ public interface IBinarySearchTreeTest<T extends IBinarySearchTree> {
     @Test
     @DisplayName("Check Remove")
     default void checkRemove() {
-        T tree = this.createBinarySearchTree();
+        IBinarySearchTree tree = this.createBinarySearchTree();
 
         // this should produce a somewhat balanced tree
         tree.put(5);
@@ -138,7 +138,7 @@ public interface IBinarySearchTreeTest<T extends IBinarySearchTree> {
     @Test
     @DisplayName("Check findMin")
     default void checkFindMin() {
-        T tree = this.createBinarySearchTree();
+        IBinarySearchTree tree = this.createBinarySearchTree();
         assertEquals(null, tree.findMin());
 
         tree.put(5);
@@ -172,7 +172,7 @@ public interface IBinarySearchTreeTest<T extends IBinarySearchTree> {
     @Test
     @DisplayName("Check findMax")
     default void checkFindMax() {
-        T tree = this.createBinarySearchTree();
+        IBinarySearchTree tree = this.createBinarySearchTree();
 
         assertEquals(null, tree.findMax());
 
@@ -207,7 +207,7 @@ public interface IBinarySearchTreeTest<T extends IBinarySearchTree> {
     @Test
     @DisplayName("Check popMin")
     default void checkPopMin() {
-        T tree = this.createBinarySearchTree();
+        IBinarySearchTree tree = this.createBinarySearchTree();
 
         assertEquals(null, tree.popMin());
 
@@ -238,7 +238,7 @@ public interface IBinarySearchTreeTest<T extends IBinarySearchTree> {
     @Test
     @DisplayName("Check popMax")
     default void checkPopMax() {
-        T tree = this.createBinarySearchTree();
+        IBinarySearchTree tree = this.createBinarySearchTree();
 
         assertEquals(null, tree.popMax());
 
@@ -271,7 +271,7 @@ public interface IBinarySearchTreeTest<T extends IBinarySearchTree> {
     @DisplayName("Check length")
     default void checkLength() {
 
-        T tree = this.createBinarySearchTree();
+        IBinarySearchTree tree = this.createBinarySearchTree();
         assertEquals(0, tree.length());
 
         tree.put(5);

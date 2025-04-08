@@ -1,8 +1,9 @@
 package examples;
 
+import interfaces.IDynamicArray;
 import interfaces.IExercisesDynamicArray;
 
-public class ExampleExercisesDynamicArray implements IExercisesDynamicArray<ExampleDynamicArray> {
+public class ExampleExercisesDynamicArray implements IExercisesDynamicArray {
     /**
      * creates a dynamic array from input and returns it
      * the values should be stored in the same order as in input
@@ -14,7 +15,7 @@ public class ExampleExercisesDynamicArray implements IExercisesDynamicArray<Exam
      * @return a dynamic array with the same values as input
      */
     @Override
-    public ExampleDynamicArray dynamicArrayFromArray(int[] input) {
+    public IDynamicArray dynamicArrayFromArray(int[] input) {
         ExampleDynamicArray array = new ExampleDynamicArray();
 
         // push every value in input into array
@@ -34,7 +35,7 @@ public class ExampleExercisesDynamicArray implements IExercisesDynamicArray<Exam
      * @return a copy of input
      */
     @Override
-    public ExampleDynamicArray copyDynamicArray(ExampleDynamicArray input) {
+    public IDynamicArray copyDynamicArray(IDynamicArray input) {
         ExampleDynamicArray array = new ExampleDynamicArray();
 
         // push every value in input into array
@@ -54,7 +55,7 @@ public class ExampleExercisesDynamicArray implements IExercisesDynamicArray<Exam
      * @return a dynamic array with all values from input in reverse order
      */
     @Override
-    public ExampleDynamicArray reverseDynamicArray(ExampleDynamicArray input) {
+    public IDynamicArray reverseDynamicArray(IDynamicArray input) {
         ExampleDynamicArray array = new ExampleDynamicArray();
 
         // we pop every value from the array this produces a reverse order
@@ -82,7 +83,7 @@ public class ExampleExercisesDynamicArray implements IExercisesDynamicArray<Exam
      * @return a sorted (ascending order) dynamic array containing all values from input0 and input1
      */
     @Override
-    public ExampleDynamicArray mergeTwoSortedDynamicArrays(ExampleDynamicArray input0, ExampleDynamicArray input1) {
+    public IDynamicArray mergeTwoSortedDynamicArrays(IDynamicArray input0, IDynamicArray input1) {
         ExampleDynamicArray array = new ExampleDynamicArray();
 
         int index0 = 0;
@@ -126,8 +127,8 @@ public class ExampleExercisesDynamicArray implements IExercisesDynamicArray<Exam
      * @return the median of the two sorted inputs
      */
     @Override
-    public int findMedianOfTwoSortedDynamicArrays(ExampleDynamicArray input0, ExampleDynamicArray input1) {
-        ExampleDynamicArray array = mergeTwoSortedDynamicArrays(input0, input1);
+    public int findMedianOfTwoSortedDynamicArrays(IDynamicArray input0, IDynamicArray input1) {
+        IDynamicArray array = mergeTwoSortedDynamicArrays(input0, input1);
         return array.get(array.length() / 2);
     }
 
@@ -154,7 +155,7 @@ public class ExampleExercisesDynamicArray implements IExercisesDynamicArray<Exam
      * @return a dynamic array containing all local minima of input
      */
     @Override
-    public ExampleDynamicArray findLocalMinima(ExampleDynamicArray input) {
+    public IDynamicArray findLocalMinima(IDynamicArray input) {
         ExampleDynamicArray array = new ExampleDynamicArray();
 
         // iterate only from 1 to length() - 1 not over full array
@@ -202,13 +203,13 @@ public class ExampleExercisesDynamicArray implements IExercisesDynamicArray<Exam
      * @return true if input is a palindrom and false if it is not
      */
     @Override
-    public boolean isArrayAPalindrome(ExampleDynamicArray input) {
+    public boolean isArrayAPalindrome(IDynamicArray input) {
         if (input.length() == 0) {
             return false;
         }
 
         // we can detect palindromes by reversing the list and comparing pair wise
-        ExampleDynamicArray reversed = reverseDynamicArray(copyDynamicArray(input));
+        IDynamicArray reversed = reverseDynamicArray(copyDynamicArray(input));
 
         // note: we need to copy input because reverse may alter its parameters
 

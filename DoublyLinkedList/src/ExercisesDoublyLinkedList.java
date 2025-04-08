@@ -1,4 +1,4 @@
 import interfaces.IExercisesDoublyLinkedList;
 
-public class ExercisesDoublyLinkedList implements IExercisesDoublyLinkedList<DoublyLinkedList> {
+public class ExercisesDoublyLinkedList implements IExercisesDoublyLinkedList {
 }

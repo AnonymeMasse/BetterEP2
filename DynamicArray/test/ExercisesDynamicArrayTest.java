@@ -1,6 +1,6 @@
 import interfaces.IExercisesDynamicArrayTest;
 
-public class ExercisesDynamicArrayTest implements IExercisesDynamicArrayTest<DynamicArray, ExercisesDynamicArray> {
+public class ExercisesDynamicArrayTest implements IExercisesDynamicArrayTest {
     @Override
     public ExercisesDynamicArray createExercisesDynamicArray() {
         return new ExercisesDynamicArray();
