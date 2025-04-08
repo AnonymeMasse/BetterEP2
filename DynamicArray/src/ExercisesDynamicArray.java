@@ -1,6 +1,7 @@
+import interfaces.IDynamicArray;
 import interfaces.IExercisesDynamicArray;
 
-public class ExercisesDynamicArray implements IExercisesDynamicArray<DynamicArray> {
+public class ExercisesDynamicArray implements IExercisesDynamicArray {
     /**
      * creates a dynamic array from input and returns it
      * the values should be stored in the same order as in input
@@ -12,7 +13,7 @@ public class ExercisesDynamicArray implements IExercisesDynamicArray<DynamicArra
      * @return a dynamic array with the same values as input
      */
     @Override
-    public DynamicArray dynamicArrayFromArray(int[] input) {
+    public IDynamicArray dynamicArrayFromArray(int[] input) {
         // TODO: implement method
         return null;
     }
@@ -26,7 +27,7 @@ public class ExercisesDynamicArray implements IExercisesDynamicArray<DynamicArra
      * @return a copy of input
      */
     @Override
-    public DynamicArray copyDynamicArray(DynamicArray input) {
+    public IDynamicArray copyDynamicArray(IDynamicArray input) {
         // TODO: implement method
         return null;
     }
@@ -40,7 +41,7 @@ public class ExercisesDynamicArray implements IExercisesDynamicArray<DynamicArra
      * @return a dynamic array with all values from input in reverse order
      */
     @Override
-    public DynamicArray reverseDynamicArray(DynamicArray input) {
+    public IDynamicArray reverseDynamicArray(IDynamicArray input) {
         // TODO: implement method
         return null;
     }
@@ -57,7 +58,7 @@ public class ExercisesDynamicArray implements IExercisesDynamicArray<DynamicArra
      * @return a sorted (ascending order) dynamic array containing all values from input0 and input1
      */
     @Override
-    public DynamicArray mergeTwoSortedDynamicArrays(DynamicArray input0, DynamicArray input1) {
+    public IDynamicArray mergeTwoSortedDynamicArrays(IDynamicArray input0, IDynamicArray input1) {
         // TODO: implement method
         return null;
     }
@@ -75,7 +76,7 @@ public class ExercisesDynamicArray implements IExercisesDynamicArray<DynamicArra
      * @return the median of the two sorted inputs
      */
     @Override
-    public int findMedianOfTwoSortedDynamicArrays(DynamicArray input0, DynamicArray input1) {
+    public int findMedianOfTwoSortedDynamicArrays(IDynamicArray input0, IDynamicArray input1) {
         // TODO: implement method
         return 0;
     }
@@ -103,7 +104,7 @@ public class ExercisesDynamicArray implements IExercisesDynamicArray<DynamicArra
      * @return a dynamic array containing all local minima of input
      */
     @Override
-    public DynamicArray findLocalMinima(DynamicArray input) {
+    public IDynamicArray findLocalMinima(IDynamicArray input) {
         return null;
     }
 
@@ -135,7 +136,7 @@ public class ExercisesDynamicArray implements IExercisesDynamicArray<DynamicArra
      * @return true if input is a palindrom and false if it is not
      */
     @Override
-    public boolean isArrayAPalindrome(DynamicArray input) {
+    public boolean isArrayAPalindrome(IDynamicArray input) {
         return false;
     }
 }

@@ -7,13 +7,13 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 
-public interface IDynamicArrayTest<T extends IDynamicArray> {
-    T createDynamicArray();
+public interface IDynamicArrayTest {
+    IDynamicArray createDynamicArray();
 
     @Test
     @DisplayName("Check Pop on empty array")
     default void checkPopOnEmptyArray() {
-        T array = this.createDynamicArray();
+        IDynamicArray array = this.createDynamicArray();
         assertEquals(null, array.pop());
         assertEquals(null, array.pop());
     }
@@ -21,7 +21,7 @@ public interface IDynamicArrayTest<T extends IDynamicArray> {
     @Test
     @DisplayName("Check remove on empty array")
     default void checkRemoveOnEmptyArray() {
-        T array = this.createDynamicArray();
+        IDynamicArray array = this.createDynamicArray();
         assertEquals(null, array.remove(0));
         assertEquals(null, array.remove(-1));
         assertEquals(null, array.remove(10));
@@ -30,7 +30,7 @@ public interface IDynamicArrayTest<T extends IDynamicArray> {
     @Test
     @DisplayName("Check get on empty array")
     default void checkGetOnEmptyArray() {
-        T array = this.createDynamicArray();
+        IDynamicArray array = this.createDynamicArray();
         assertEquals(null, array.get(0));
         assertEquals(null, array.get(-1));
         assertEquals(null, array.get(1));
@@ -39,14 +39,14 @@ public interface IDynamicArrayTest<T extends IDynamicArray> {
     @Test
     @DisplayName("Check length on empty array")
     default void checkLengthOnEmptyArray() {
-        T array = this.createDynamicArray();
+        IDynamicArray array = this.createDynamicArray();
         assertEquals(0, array.length());
     }
 
     @Test
     @DisplayName("Check Push Single Value and Pop it")
     default void checkPushSingleValueAndPopIt() {
-        T array = this.createDynamicArray();
+        IDynamicArray array = this.createDynamicArray();
         array.push(69);
         assertEquals(69, array.pop());
     }
@@ -54,7 +54,7 @@ public interface IDynamicArrayTest<T extends IDynamicArray> {
     @Test
     @DisplayName("Check Push Single Value and Get it")
     default void checkPushSingleValueAndGetIt() {
-        T array = this.createDynamicArray();
+        IDynamicArray array = this.createDynamicArray();
         array.push(69);
         assertEquals(69, array.get(0));
     }
@@ -62,7 +62,7 @@ public interface IDynamicArrayTest<T extends IDynamicArray> {
     @Test
     @DisplayName("Check Get with Multiple Elements")
     default void checkGetWithMultipleElements() {
-        T array = this.createDynamicArray();
+        IDynamicArray array = this.createDynamicArray();
 
         array.push(69);
         array.push(68);
@@ -86,7 +86,7 @@ public interface IDynamicArrayTest<T extends IDynamicArray> {
     @Test
     @DisplayName("Check Pop with Multiple Elements")
     default void checkPopWithMultipleElements() {
-        T array = this.createDynamicArray();
+        IDynamicArray array = this.createDynamicArray();
         array.push(69);
         array.push(68);
         array.push(67);
@@ -116,7 +116,7 @@ public interface IDynamicArrayTest<T extends IDynamicArray> {
     @Test
     @DisplayName("Check Length with Push")
     default void checkLengthWithPush() {
-        T array = this.createDynamicArray();
+        IDynamicArray array = this.createDynamicArray();
         assertEquals(0, array.length());
 
         array.push(0);
@@ -135,7 +135,7 @@ public interface IDynamicArrayTest<T extends IDynamicArray> {
     @Test
     @DisplayName("Check Length with Pop")
     default void checkLengthWithPop() {
-        T array = this.createDynamicArray();
+        IDynamicArray array = this.createDynamicArray();
 
         assertEquals(0, array.length());
 
@@ -173,7 +173,7 @@ public interface IDynamicArrayTest<T extends IDynamicArray> {
     @Test
     @DisplayName("Check clear")
     default void checkClear() {
-        T array = this.createDynamicArray();
+        IDynamicArray array = this.createDynamicArray();
 
         assertEquals(0, array.length());
 
@@ -199,7 +199,7 @@ public interface IDynamicArrayTest<T extends IDynamicArray> {
     @Test
     @DisplayName("Check Insert")
     default void checkInsert() {
-        T array = this.createDynamicArray();
+        IDynamicArray array = this.createDynamicArray();
 
         // all of these should not be inserted because out of bounds index
         array.insert(69, 0);
@@ -243,7 +243,7 @@ public interface IDynamicArrayTest<T extends IDynamicArray> {
     @Test
     @DisplayName("Check remove")
     default void checkRemove() {
-        T array = this.createDynamicArray();
+        IDynamicArray array = this.createDynamicArray();
 
         assertEquals(null, array.remove(0));
         assertEquals(null, array.remove(-1));

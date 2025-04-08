@@ -1,6 +1,6 @@
 package interfaces;
 
-public interface IExercisesDynamicArray<T extends IDynamicArray> {
+public interface IExercisesDynamicArray {
     /**
      * creates a dynamic array from input and returns it
      * the values should be stored in the same order as in input
@@ -11,7 +11,7 @@ public interface IExercisesDynamicArray<T extends IDynamicArray> {
      *              - may be altered
      * @return a dynamic array with the same values as input
      */
-    T dynamicArrayFromArray(int[] input);
+    IDynamicArray dynamicArrayFromArray(int[] input);
 
     /**
      * create a copy of input
@@ -21,7 +21,7 @@ public interface IExercisesDynamicArray<T extends IDynamicArray> {
      *              - should not be altered
      * @return a copy of input
      */
-    T copyDynamicArray(T input);
+    IDynamicArray copyDynamicArray(IDynamicArray input);
 
     /**
      * reverse the ordering of input
@@ -31,7 +31,7 @@ public interface IExercisesDynamicArray<T extends IDynamicArray> {
      *              - might be empty -> return empty dynamic array
      * @return a dynamic array with all values from input in reverse order
      */
-    T reverseDynamicArray(T input);
+    IDynamicArray reverseDynamicArray(IDynamicArray input);
 
     /**
      * merge two sorted (ascending order) dynamic arrays into a single sorted dynamic array
@@ -44,7 +44,7 @@ public interface IExercisesDynamicArray<T extends IDynamicArray> {
      *               - may be altered
      * @return a sorted (ascending order) dynamic array containing all values from input0 and input1
      */
-    T mergeTwoSortedDynamicArrays(T input0, T input1);
+    IDynamicArray mergeTwoSortedDynamicArrays(IDynamicArray input0, IDynamicArray input1);
 
     /**
      * returns the median of two sorted arrays
@@ -58,7 +58,7 @@ public interface IExercisesDynamicArray<T extends IDynamicArray> {
      *               - may be altered
      * @return the median of the two sorted inputs
      */
-    int findMedianOfTwoSortedDynamicArrays(T input0, T input1);
+    int findMedianOfTwoSortedDynamicArrays(IDynamicArray input0, IDynamicArray input1);
 
     /**
      * returns an array with all local minima of values
@@ -82,7 +82,7 @@ public interface IExercisesDynamicArray<T extends IDynamicArray> {
      *              - may be altered
      * @return a dynamic array containing all local minima of input
      */
-    T findLocalMinima(T input);
+    IDynamicArray findLocalMinima(IDynamicArray input);
 
     /**
      * checks if input is a palindrom array
@@ -111,5 +111,5 @@ public interface IExercisesDynamicArray<T extends IDynamicArray> {
      *              - may be altered
      * @return true if input is a palindrom and false if it is not
      */
-    boolean isArrayAPalindrome(T input);
+    boolean isArrayAPalindrome(IDynamicArray input);
 }
