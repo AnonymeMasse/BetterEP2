@@ -1,6 +1,6 @@
 package interfaces;
 
-public interface IExcercisesLinkedList<T extends ILinkedList> {
+public interface IExercisesLinkedList {
 
     /**
      * add every single value into a linked list and return it the original order of the values should be preserved
@@ -10,7 +10,7 @@ public interface IExcercisesLinkedList<T extends ILinkedList> {
      *              - may be altered
      * @return      a list with all values from array in the same order as in array
      */
-    T linkedListFromArray(int[] array);
+    ILinkedList linkedListFromArray(int[] array);
 
     /**
      * constructs a new linked list and copies all values (in the same order) from input into it
@@ -19,7 +19,7 @@ public interface IExcercisesLinkedList<T extends ILinkedList> {
      *
      * @return      a copy of input
      */
-    T copyLinkedList(T input);
+    ILinkedList copyLinkedList(ILinkedList input);
 
     /**
      * merge the two sorted lists a and b into a new linked list and return it
@@ -34,7 +34,7 @@ public interface IExcercisesLinkedList<T extends ILinkedList> {
      *          - may be altered
      * @return a sorted linked list (ascending order) with every value from a and b
      */
-    T mergeTwoSortedLinkedLists(T a, T b);
+    ILinkedList mergeTwoSortedLinkedLists(ILinkedList a, ILinkedList b);
 
     /**
      * constructs a new linked list and fills it with the lower half of input
@@ -46,7 +46,7 @@ public interface IExcercisesLinkedList<T extends ILinkedList> {
      *
      * @return a new linked list containing the lower half (in the same order) of input
      */
-    T getLowerHalfOfLinkedList(T input);
+    ILinkedList getLowerHalfOfLinkedList(ILinkedList input);
 
     /**
      * constructs a new linked list and fills it with the upper half of input
@@ -58,7 +58,7 @@ public interface IExcercisesLinkedList<T extends ILinkedList> {
      *
      * @return a new linked list containing the lower half (in the same order) of input
      */
-    T getUpperHalfOfLinkedList(T input);
+    ILinkedList getUpperHalfOfLinkedList(ILinkedList input);
 
     /**
      * sort input with merge sort using the earlier methods: getLowerHalfOfLinkedList, getUpperHalfOfLinkedList, and mergeTwoSortedLinkedLists
@@ -75,5 +75,5 @@ public interface IExcercisesLinkedList<T extends ILinkedList> {
      *
      * @return      a new sorted linked list
      */
-    T mergeSortLinkedList(T input);
+    ILinkedList mergeSortLinkedList(ILinkedList input);
 }

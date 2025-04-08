@@ -5,24 +5,24 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public interface IExercisesLinkedListTest<D extends ILinkedList, T extends IExcercisesLinkedList<D>> {
-    T createExercisesLinkedList();
+public interface IExercisesLinkedListTest {
+    IExercisesLinkedList createExercisesLinkedList();
 
     @Test
     @DisplayName("Check linkedListFromArray")
     default void checkLinkedListFromArray() {
-        T exercises = this.createExercisesLinkedList();
+        IExercisesLinkedList exercises = this.createExercisesLinkedList();
 
         {
             int[] array = new int[0];
-            D list = exercises.linkedListFromArray(array);
+            ILinkedList list = exercises.linkedListFromArray(array);
             assertEquals(0, list.length());
         }
 
         {
             int[] array = new int[]{1};
 
-            D list = exercises.linkedListFromArray(array);
+            ILinkedList list = exercises.linkedListFromArray(array);
 
             assertEquals(1, list.length());
             assertEquals(1, list.get(0));
@@ -30,7 +30,7 @@ public interface IExercisesLinkedListTest<D extends ILinkedList, T extends IExce
 
         {
             int[] array = new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8};
-            D list = exercises.linkedListFromArray(array);
+            ILinkedList list = exercises.linkedListFromArray(array);
 
             assertEquals(9, list.length());
 
@@ -49,12 +49,12 @@ public interface IExercisesLinkedListTest<D extends ILinkedList, T extends IExce
     @Test
     @DisplayName("Check copyLinkedList")
     default void checkCopyLinkedList() {
-        T exercises = this.createExercisesLinkedList();
+        IExercisesLinkedList exercises = this.createExercisesLinkedList();
 
         {
             int[] array = new int[]{};
-            D list = exercises.linkedListFromArray(array);
-            D copy = exercises.copyLinkedList(list);
+            ILinkedList list = exercises.linkedListFromArray(array);
+            ILinkedList copy = exercises.copyLinkedList(list);
 
             assertEquals(0, copy.length());
             assertNotEquals(copy, list);
@@ -62,8 +62,8 @@ public interface IExercisesLinkedListTest<D extends ILinkedList, T extends IExce
 
         {
             int[] array = new int[]{1};
-            D list = exercises.linkedListFromArray(array);
-            D copy = exercises.copyLinkedList(list);
+            ILinkedList list = exercises.linkedListFromArray(array);
+            ILinkedList copy = exercises.copyLinkedList(list);
 
             assertNotEquals(list, copy);
             assertEquals(1, copy.get(0));
@@ -72,8 +72,8 @@ public interface IExercisesLinkedListTest<D extends ILinkedList, T extends IExce
 
         {
             int[] array = new int[]{0, 1, 2, 3, 4};
-            D list = exercises.linkedListFromArray(array);
-            D copy = exercises.copyLinkedList(list);
+            ILinkedList list = exercises.linkedListFromArray(array);
+            ILinkedList copy = exercises.copyLinkedList(list);
             assertNotEquals(list, copy);
 
             assertEquals(5, copy.length());
@@ -89,16 +89,16 @@ public interface IExercisesLinkedListTest<D extends ILinkedList, T extends IExce
     @Test
     @DisplayName("Check mergeTwoSortedLinkedLists")
     default void checkMergeTwoSortedLinkedLists() {
-        T exercises = this.createExercisesLinkedList();
+        IExercisesLinkedList exercises = this.createExercisesLinkedList();
 
         {
             int[] array0 = new int[]{1, 2, 3, 4};
             int[] array1 = new int[]{2, 3, 4, 5};
 
-            D list0 = exercises.linkedListFromArray(array0);
-            D list1 = exercises.linkedListFromArray(array1);
+            ILinkedList list0 = exercises.linkedListFromArray(array0);
+            ILinkedList list1 = exercises.linkedListFromArray(array1);
 
-            D list = exercises.mergeTwoSortedLinkedLists(list0, list1);
+            ILinkedList list = exercises.mergeTwoSortedLinkedLists(list0, list1);
 
             assertEquals(8, list.length());
 
@@ -116,10 +116,10 @@ public interface IExercisesLinkedListTest<D extends ILinkedList, T extends IExce
             int[] array0 = new int[]{};
             int[] array1 = new int[]{1, 2};
 
-            D list0 = exercises.linkedListFromArray(array0);
-            D list1 = exercises.linkedListFromArray(array1);
+            ILinkedList list0 = exercises.linkedListFromArray(array0);
+            ILinkedList list1 = exercises.linkedListFromArray(array1);
 
-            D list = exercises.mergeTwoSortedLinkedLists(list0, list1);
+            ILinkedList list = exercises.mergeTwoSortedLinkedLists(list0, list1);
 
             assertEquals(2, list.length());
 
@@ -130,10 +130,10 @@ public interface IExercisesLinkedListTest<D extends ILinkedList, T extends IExce
             int[] array0 = new int[]{1, 2};
             int[] array1 = new int[]{};
 
-            D list0 = exercises.linkedListFromArray(array0);
-            D list1 = exercises.linkedListFromArray(array1);
+            ILinkedList list0 = exercises.linkedListFromArray(array0);
+            ILinkedList list1 = exercises.linkedListFromArray(array1);
 
-            D list = exercises.mergeTwoSortedLinkedLists(list0, list1);
+            ILinkedList list = exercises.mergeTwoSortedLinkedLists(list0, list1);
 
             assertEquals(2, list.length());
 
@@ -145,10 +145,10 @@ public interface IExercisesLinkedListTest<D extends ILinkedList, T extends IExce
             int[] array0 = new int[]{};
             int[] array1 = new int[]{};
 
-            D list0 = exercises.linkedListFromArray(array0);
-            D list1 = exercises.linkedListFromArray(array1);
+            ILinkedList list0 = exercises.linkedListFromArray(array0);
+            ILinkedList list1 = exercises.linkedListFromArray(array1);
 
-            D list = exercises.mergeTwoSortedLinkedLists(list0, list1);
+            ILinkedList list = exercises.mergeTwoSortedLinkedLists(list0, list1);
 
             assertEquals(0, list.length());
         }
@@ -157,10 +157,10 @@ public interface IExercisesLinkedListTest<D extends ILinkedList, T extends IExce
             int[] array0 = new int[]{0, 1, 2};
             int[] array1 = new int[]{3, 4, 5};
 
-            D list0 = exercises.linkedListFromArray(array0);
-            D list1 = exercises.linkedListFromArray(array1);
+            ILinkedList list0 = exercises.linkedListFromArray(array0);
+            ILinkedList list1 = exercises.linkedListFromArray(array1);
 
-            D list = exercises.mergeTwoSortedLinkedLists(list0, list1);
+            ILinkedList list = exercises.mergeTwoSortedLinkedLists(list0, list1);
 
             assertEquals(6, list.length());
 
@@ -176,20 +176,20 @@ public interface IExercisesLinkedListTest<D extends ILinkedList, T extends IExce
     @Test
     @DisplayName("Check getLowerHalfOfLinkedList")
     default void checkGetLowerHalfOfLinkedList() {
-        T exercises = this.createExercisesLinkedList();
+        IExercisesLinkedList exercises = this.createExercisesLinkedList();
 
         {
             int[] array = new int[]{1};
-            D list = exercises.linkedListFromArray(array);
-            D lower = exercises.getLowerHalfOfLinkedList(list);
+            ILinkedList list = exercises.linkedListFromArray(array);
+            ILinkedList lower = exercises.getLowerHalfOfLinkedList(list);
 
             assertEquals(0, lower.length());
         }
 
         {
             int[] array = new int[]{1, 2};
-            D list = exercises.linkedListFromArray(array);
-            D lower = exercises.getLowerHalfOfLinkedList(list);
+            ILinkedList list = exercises.linkedListFromArray(array);
+            ILinkedList lower = exercises.getLowerHalfOfLinkedList(list);
 
             assertEquals(1, lower.length());
             assertEquals(1, lower.get(0));
@@ -197,8 +197,8 @@ public interface IExercisesLinkedListTest<D extends ILinkedList, T extends IExce
 
         {
             int[] array = new int[]{0, 1, 2, 3, 4, 5, 6};
-            D list = exercises.linkedListFromArray(array);
-            D lower = exercises.getLowerHalfOfLinkedList(list);
+            ILinkedList list = exercises.linkedListFromArray(array);
+            ILinkedList lower = exercises.getLowerHalfOfLinkedList(list);
 
             assertEquals(3, lower.length());
 
@@ -211,12 +211,12 @@ public interface IExercisesLinkedListTest<D extends ILinkedList, T extends IExce
     @Test
     @DisplayName("Check getUpperHalfOfLinkedList")
     default void checkGetUpperHalfOfLinkedList() {
-        T exercises = this.createExercisesLinkedList();
+        IExercisesLinkedList exercises = this.createExercisesLinkedList();
 
         {
             int[] array = new int[]{1};
-            D list = exercises.linkedListFromArray(array);
-            D upper = exercises.getUpperHalfOfLinkedList(list);
+            ILinkedList list = exercises.linkedListFromArray(array);
+            ILinkedList upper = exercises.getUpperHalfOfLinkedList(list);
 
             assertEquals(1, upper.length());
             assertEquals(1, upper.get(0));
@@ -224,8 +224,8 @@ public interface IExercisesLinkedListTest<D extends ILinkedList, T extends IExce
 
         {
             int[] array = new int[]{1, 2};
-            D list = exercises.linkedListFromArray(array);
-            D upper = exercises.getUpperHalfOfLinkedList(list);
+            ILinkedList list = exercises.linkedListFromArray(array);
+            ILinkedList upper = exercises.getUpperHalfOfLinkedList(list);
 
             assertEquals(1, upper.length());
             assertEquals(2, upper.get(0));
@@ -233,8 +233,8 @@ public interface IExercisesLinkedListTest<D extends ILinkedList, T extends IExce
 
         {
             int[] array = new int[]{0, 1, 2, 3, 4, 5, 6};
-            D list = exercises.linkedListFromArray(array);
-            D upper = exercises.getUpperHalfOfLinkedList(list);
+            ILinkedList list = exercises.linkedListFromArray(array);
+            ILinkedList upper = exercises.getUpperHalfOfLinkedList(list);
 
             assertEquals(4, upper.length());
 
@@ -248,12 +248,12 @@ public interface IExercisesLinkedListTest<D extends ILinkedList, T extends IExce
     @Test
     @DisplayName("Check mergeSortLinekdList")
     default void mergeSortLinkedList() {
-        T exercises = this.createExercisesLinkedList();
+        IExercisesLinkedList exercises = this.createExercisesLinkedList();
 
         {
             int[] array = new int[]{1};
-            D list = exercises.linkedListFromArray(array);
-            D sorted = exercises.mergeSortLinkedList(list);
+            ILinkedList list = exercises.linkedListFromArray(array);
+            ILinkedList sorted = exercises.mergeSortLinkedList(list);
 
             assertEquals(1, sorted.length());
             assertEquals(1, sorted.get(0));
@@ -261,8 +261,8 @@ public interface IExercisesLinkedListTest<D extends ILinkedList, T extends IExce
 
         {
             int[] array = new int[]{2, 1, 0, 3, 5, 4};
-            D list = exercises.linkedListFromArray(array);
-            D sorted = exercises.mergeSortLinkedList(list);
+            ILinkedList list = exercises.linkedListFromArray(array);
+            ILinkedList sorted = exercises.mergeSortLinkedList(list);
 
             assertEquals(6, sorted.length());
             assertEquals(0, sorted.get(0));
