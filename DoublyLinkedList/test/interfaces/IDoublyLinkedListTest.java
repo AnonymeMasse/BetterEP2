@@ -5,13 +5,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public interface IDoublyLinkedListTest<T extends IDoublyLinkedList> {
-    T createDoublyLinkedList();
+public interface IDoublyLinkedListTest {
+    IDoublyLinkedList createDoublyLinkedList();
 
     @Test
     @DisplayName("Add Values and Check Length")
     default void addValuesAndCheckLength() {
-        T list = this.createDoublyLinkedList();
+        IDoublyLinkedList list = this.createDoublyLinkedList();
 
         assertEquals(0, list.length());
 
@@ -43,7 +43,7 @@ public interface IDoublyLinkedListTest<T extends IDoublyLinkedList> {
     @Test
     @DisplayName("Add Values and Check Order")
     default void addValuesAndCheckOrder() {
-        T list = this.createDoublyLinkedList();
+        IDoublyLinkedList list = this.createDoublyLinkedList();
 
         list.addFirst(4);
         list.addLast(5);
@@ -71,14 +71,14 @@ public interface IDoublyLinkedListTest<T extends IDoublyLinkedList> {
     @Test
     @DisplayName("Check get on empty list")
     default void checkGetOnEmptyList() {
-        T list = this.createDoublyLinkedList();
+        IDoublyLinkedList list = this.createDoublyLinkedList();
         assertEquals(null, list.get(0));
     }
 
     @Test
     @DisplayName("Check remove on empty List")
     default void checkRemoveOnEmptyList() {
-        T list = this.createDoublyLinkedList();
+        IDoublyLinkedList list = this.createDoublyLinkedList();
         assertEquals(null, list.remove(0));
         assertEquals(null, list.removeFirst());
         assertEquals(null, list.removeLast());
@@ -87,14 +87,14 @@ public interface IDoublyLinkedListTest<T extends IDoublyLinkedList> {
     @Test
     @DisplayName("Check Length on empty List")
     default void checkLengthOnEmptyList() {
-        T list = this.createDoublyLinkedList();
+        IDoublyLinkedList list = this.createDoublyLinkedList();
         assertEquals(0, list.length());
     }
 
     @Test
     @DisplayName("Check insert on empty list")
     default void checkInsertOnEmptyList() {
-        T list = this.createDoublyLinkedList();
+        IDoublyLinkedList list = this.createDoublyLinkedList();
         list.insert(69, 0);
         assertEquals(0, list.length());
     }
@@ -102,7 +102,7 @@ public interface IDoublyLinkedListTest<T extends IDoublyLinkedList> {
     @Test
     @DisplayName("Check Insert with invalid index")
     default void checkInsertWithInvalidIndex() {
-        T list = this.createDoublyLinkedList();
+        IDoublyLinkedList list = this.createDoublyLinkedList();
         list.insert(69, 0);
         assertEquals(0, list.length());
 
@@ -118,7 +118,7 @@ public interface IDoublyLinkedListTest<T extends IDoublyLinkedList> {
     @Test
     @DisplayName("Check Insert")
     default void checkInsert() {
-        T list = this.createDoublyLinkedList();
+        IDoublyLinkedList list = this.createDoublyLinkedList();
         list.addLast(0);
         list.addLast(1);
         list.addLast(2);
@@ -178,7 +178,7 @@ public interface IDoublyLinkedListTest<T extends IDoublyLinkedList> {
     @DisplayName("Check RemoveLast")
     default void checkRemoveLast() {
         Integer removed;
-        T list = this.createDoublyLinkedList();
+        IDoublyLinkedList list = this.createDoublyLinkedList();
 
         assertEquals(null, list.removeLast());
 
@@ -260,7 +260,7 @@ public interface IDoublyLinkedListTest<T extends IDoublyLinkedList> {
     @DisplayName("Check removeFirst")
     default void checkRemoveFirst() {
         Integer removed;
-        T list = this.createDoublyLinkedList();
+        IDoublyLinkedList list = this.createDoublyLinkedList();
 
         assertEquals(null, list.removeFirst());
 
@@ -323,7 +323,7 @@ public interface IDoublyLinkedListTest<T extends IDoublyLinkedList> {
     @Test
     @DisplayName("Check remove")
     default void checkRemove() {
-        T list = this.createDoublyLinkedList();
+        IDoublyLinkedList list = this.createDoublyLinkedList();
 
         assertEquals(null, list.remove(0));
         assertEquals(null, list.remove(-1));
